@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Libre Baskerville', serif;
+font-family: 'Merriweather', serif;
+background-color: aliceblue;
+}
+._sidebar{
+  height: 100vh;
+  background-color:rgb(215, 236, 244);
+}
+.sidebar-card-illustration {
+  height: 3rem;
+  display: block;
+}
+.sidebar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  border-radius: 0.35rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.info-card{
+  border-left: 6px solid navy;
+  font-size: 20px;
+}
+.form-component{
+  margin: auto;
+  margin-top: 40px;
+  border: 2px solid navy;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.table-component{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
