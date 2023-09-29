@@ -58,15 +58,15 @@ function App() {
     {
       teacher_id:"T301",
       name:"Agnes Lily",
-      email:"agneslily@gmail.com",
+      email:"agi@ gmail.com",
       number:9876543413,
       experience:"2",
       course:"MERN Stack"
     },
     {
       student_id:"T303",
-      name:"Evangeline",
-      email:"evangelin@gmail.com",
+      name:"Evan Geline",
+      email:"evan@ gmail.com",
       number:9876545678,
       experience:"1",
       course:"Data Science"

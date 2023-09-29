@@ -23,7 +23,8 @@ const MyCalendar = () => {
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 600 ,border:"2px solid navy",borderRadius:"20px",padding:"40px"}} // Set the height of the calendar
+        className='calendar'
+        style={{ height: "80vh" ,border:"2px solid navy",borderRadius:"20px",padding:"20px"}} // Set the height of the calendar
       />
     </div>
   );

@@ -1,77 +1,82 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {BiSolidRightArrow} from "react-icons/bi"
+import {AiFillDashboard} from"react-icons/ai"
+import {BsPersonFillAdd,BsCalendarWeekFill} from "react-icons/bs"
+import {FaSearch} from "react-icons/fa"
+import {MdScreenSearchDesktop} from "react-icons/md"
+import {GrChapterAdd} from "react-icons/gr"
 const SideBar = () => {
-    const iconStyles = {fontSize:"20",margin:"10px",marginBottom:"15px",color:"navy"}
+    const iconStyles = {fontSize:"20",color:"navy"}
   return (
     <>
-<nav id="sidebar" className="col-md-3 col-lg-2 d-md-block sidebar _sidebar text-">
-    <div className="position-sticky p-4">
-        <ul className="nav flex-column gap-4 mt-1">
+<nav id="sidebar" className="navbar navbar-expand-lg sidebar _sidebar">
+    <div className="position-sticky">
+        <ul className="nav flex-column mt-1">
             <li className="nav-item">
                 <Link className="nav-link" href="#!" to="/dashboard">
-                    Dashboard<BiSolidRightArrow style={iconStyles}/>
+                    <span className="sidebar-items">Dashboard</span><AiFillDashboard className='sidebar-icons' style={iconStyles}/>
                 </Link>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#!" >
-                    Student Management
+                    <span className="sidebar-subheading">Student</span>
                 </a>
                 <ul className="nav flex-column ml-3">
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/student/addStudent">
-                            Add Student<BiSolidRightArrow style={iconStyles}/>
+                            <span className='sidebar-items'>Add Student</span><BsPersonFillAdd className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/student/viewStudent">
-                            View Students<BiSolidRightArrow style={iconStyles}/>
+                           <span className="sidebar-items"> View Students</span><FaSearch className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                 </ul>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#!">
-                    Teacher Management
+                    <span className="sidebar-subheading">Teacher</span>
                 </a>
                 <ul className="nav flex-column ml-3">
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/teacher/addTeacher">
-                            Add Teacher<BiSolidRightArrow style={iconStyles}/>
+                            <span className="sidebar-items">Add Teacher</span><BsPersonFillAdd className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/teacher/viewTeacher">
-                            View Teachers<BiSolidRightArrow style={iconStyles}/>
+                            <span className="sidebar-items">View Teachers</span><FaSearch className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                 </ul>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#!">
-                    Course Management
+                    <span className="sidebar-subheading">Course</span>
                 </a>
                 <ul className="nav flex-column ml-3">
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/course/addCourse">
-                            Add Course<BiSolidRightArrow style={iconStyles}/>
+                            <span className="sidebar-items">Add Course</span><GrChapterAdd className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" href="#!" to="/course/viewCourse">
-                            View Courses<BiSolidRightArrow style={iconStyles}/>
+                            <span className="sidebar-items">View Courses</span><MdScreenSearchDesktop className='sidebar-icons' style={iconStyles}/>
                         </Link>
                     </li>
                 </ul>
             </li>
             <li className="nav-item">
                 <Link className="nav-link" href="#!" to="/calendar">
-                    Calendar<BiSolidRightArrow style={iconStyles}/>
+                    <span className="sidebar-items">Calendar</span><BsCalendarWeekFill className='sidebar-icons' style={iconStyles}/>
                 </Link>
             </li>
             
         </ul>
     </div>
+    
 </nav>
 
     </>

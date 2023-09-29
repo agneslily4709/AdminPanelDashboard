@@ -23,35 +23,35 @@ const EditTeacher = () => {
   }
 
   return (
-    <>
+    <div className='form-container'>
         <form  className='form-component col-md-6'onSubmit={handleSubmit}>
-        <h3 className='text-center'>Add Student</h3>
-    <div className="form-group row mt-4">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Name</label>
+        <h3 className='text-center'>Edit Student</h3>
+    <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Name</label>
     <div className="col-sm-10">
       <input type="text" name='name' className="form-control" id="inputEmail3" placeholder="Name" value={data.name} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-4">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Email</label>
     <div className="col-sm-10">
       <input type="email" name='email' className="form-control" id="inputEmail3" placeholder="Email" value={data.email} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-4">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Number</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Number</label>
     <div className="col-sm-10">
       <input type="text" name='number' className="form-control" id="inputEmail3" placeholder="Number" value={data.number} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-4">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Level</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Level</label>
     <div className="col-sm-10">
       <input type="number" name='experience' className="form-control" id="inputEmail3" placeholder="Level" value={data.experience} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-4">
-  <label htmlFor="exampleInputEmail1" className='col-sm-2 col-form-label'>Course</label>
+  <div className="form-group row ">
+  <label htmlFor="exampleInputEmail1" className='col-sm-2 col-form-label form-label'>Course</label>
     <div className='col-sm-10'>
     <select name='course' onChange={handleInput} className="custom-select form-control">
   <option defaultValue={data.course}>Open this select menu </option>
@@ -63,7 +63,7 @@ const EditTeacher = () => {
   </div>
   <button type="submit" className="mt-4 btn btn-primary">Submit</button>
 </form>
-    </>
+    </div>
   )
 }
 

@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
    <nav className="text-light p-3" style={{backgroundColor:"navy",color:"#f0f0f0"}}>
         <div className='container'>                
-        <h3 className="text-center">Admin Panel Dashboard</h3>
+        <h3 className="text-center">Admin Master</h3>
         </div>
         
     </nav>

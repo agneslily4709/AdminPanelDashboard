@@ -25,49 +25,49 @@ const EditCourse = () => {
   }
 
   return (
-    <>
+    <div className='form-container'>
     <form  className='form-component col-md-6'onSubmit={handleSubmit}>
-        <h3 className='text-center'>Add Course</h3>
-        <div className="form-group row mt-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">CourseId</label>
+        <h3 className='text-center'>Edit Course</h3>
+        <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">CourseId</label>
     <div className="col-sm-10">
       <input type="text" name='course_id' className="form-control" id="inputEmail3" placeholder="Course Id" value={data.course_id} onChange={handleInput}/>
     </div>
   </div>    
-    <div className="form-group row mt-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Title</label>
+    <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Title</label>
     <div className="col-sm-10">
       <input type="text" name='title' className="form-control" id="inputEmail3" placeholder="Title" value={data.title} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Instructor</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Instructor</label>
     <div className="col-sm-10">
       <input type="text" name='instructor' className="form-control" id="inputEmail3" placeholder="Instructor" value={data.instructor} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Duration</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Duration</label>
     <div className="col-sm-10">
       <input type="text" name='duration' className="form-control" id="inputEmail3" placeholder="Duration" value={data.duration} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-3">
-    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Level</label>
+  <div className="form-group row ">
+    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label form-label">Level</label>
     <div className="col-sm-10">
       <input type="number" name='level' className="form-control" id="inputEmail3" placeholder="Level" value={data.level} onChange={handleInput}/>
     </div>
   </div>
-  <div className="form-group row mt-3">
-  <label htmlFor="exampleInputEmail1" className='col-sm-2 col-form-label'>Learners</label>
-    <div className='col-sm-10 w-75'>
+  <div className="form-group row ">
+  <label htmlFor="exampleInputEmail1" className='col-sm-2 col-form-label form-label'>Learners</label>
+    <div className='col-sm-10'>
     <input type="text" name='learners' className="form-control" id="inputEmail3" placeholder="Learners" value={data.learners} onChange={handleInput}/>
 
     </div>
   </div>
   <button type="submit" className="mt-3 btn btn-primary">Submit</button>
 </form>
-    </>
+    </div>
   )
 }
 

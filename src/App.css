@@ -1,56 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@300;400;700;900&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+._sidebar {
+    height: 90vh;
+    background-color: rgb(215, 236, 244);
 }
-body{
-  height: 100vh;
-  width: 100vw;
-  font-family: 'Libre Baskerville', serif;
-font-family: 'Merriweather', serif;
-background-color: aliceblue;
+.sidebar-content {
+    margin-top: 20px;
 }
-._sidebar{
-  height: 100vh;
-  background-color:rgb(215, 236, 244);
+.sidebar-icons {
+    display: none;
 }
-.sidebar-card-illustration {
-  height: 3rem;
-  display: block;
+.nav-item {
+    margin: 10px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 .sidebar-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 0.875rem;
-  border-radius: 0.35rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+    font-size: 0.875rem;
+    border-radius: 0.35rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
-.info-card{
-  border-left: 6px solid navy;
-  font-size: 20px;
+.info-card {
+    border: 6px solid navy;
+    font-size: 20px;
 }
-.form-component{
-  margin: auto;
-  margin-top: 40px;
-  border: 2px solid navy;
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.form-group {
+    margin-top: 20px;
 }
-.table-component{
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.form-component {
+    margin: 40px;
+    border: 2px solid navy;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.table-component {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-title {
+    text-align: center;
+}
+.calendar {
+    height: 600;
+    border: 2px solid navy;
+    border-radius: 20px;
+    padding: 40px;
+}
+@media screen and (max-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+    ._sidebar {
+        width: 60px;
+        border-width: 0px 3px 0px 0px;
+        border-style: solid;
+        border-color: navy;
+    }
+    .sidebar-icons {
+        display: block;
+    }
+    .sidebar-items {
+        display: none;
+    }
+    .sidebar-subheading {
+        font-size: 11px;
+    }
+    .nav-link{
+        padding: 0.75rem;
+    }
+    .nav-item {
+        margin: 1px;
+    }
+    .form-component {
+        width: 275px;
+        border: 2px solid navy;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form-label {
+        display: none;
+    }
+    .form-title {
+        font-size: 20px;
+    }
+    .table-component {
+        margin: 10px;
+        width: 200px;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline;
+    }
+    .action-button {
+        width: 30px;
+    }
+    .table-data{
+        width: 30px;
+    }
+    .table>:not(caption)>*>*{
+        padding: 3px 0px;
+    }
 }

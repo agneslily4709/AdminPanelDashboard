@@ -1,7 +1,8 @@
 import React,{useContext} from 'react'
 import {UserContext} from './../App'
 import { useNavigate } from 'react-router-dom';
-
+import {BiEdit} from "react-icons/bi"
+import {AiOutlineDelete} from "react-icons/ai"
 const ViewCourse = () => {
   const navigate = useNavigate()
   const handleDelete = (i) => {
@@ -13,17 +14,15 @@ const ViewCourse = () => {
     const renderPage = () => {
         return context.course.map((item, i) => (
           <tr key={item.course_id}>
-            <td>{i + 1}</td>
-            <td>{item.title}</td>
-            <td>{item.instructor}</td>
-            <td>{item.duration}</td>
-            <td>{item.level}</td>
-            <td>{item.learners}</td>
-            <td>
-                <button className='btn btn-success' onClick={()=>navigate(`/course/editCourse/${i}`)}> Edit</button>
-                &nbsp;
-                &nbsp;
-                <button className='btn btn-danger' onClick={()=>handleDelete(i)}>Delete</button>
+            <td className='table-data'>{i + 1}</td>
+            <td className='table-data'>{item.title}</td>
+            <td className='table-data'>{item.instructor}</td>
+            <td className='table-data'>{item.duration}</td>
+            <td className='table-data'>{item.level}</td>
+            <td className='table-data'>{item.learners}</td>
+            <td className=''>
+                <button className='btn btn-success action-button d-inline-block m-1' onClick={()=>navigate(`/course/editCourse/${i}`)}><BiEdit/> </button>
+                <button className='btn btn-danger action-button d-inline-block m-1' onClick={()=>handleDelete(i)}><AiOutlineDelete/></button>
             </td>
           </tr>
         ));
